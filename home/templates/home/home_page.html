@@ -3,9 +3,11 @@
 <!-- load wagtailcore_tags by adding this: -->
 {% load wagtailcore_tags %}
 
-{% block body_class %}template-homepage{% endblock %}
+{% block body_class %}{% endblock %}
 
 <!-- replace everything below with: -->
 {% block content %}
+    <div class="p-5">
     {{ page.body|richtext }}
+    </div>
 {% endblock %}
